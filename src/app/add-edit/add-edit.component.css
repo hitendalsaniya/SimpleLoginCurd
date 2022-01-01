@@ -1,0 +1,16 @@
+.center_div{
+    margin:0 auto;
+}
+.formHeading{
+    background-color: darkslategrey;
+    color: white;
+    border: 1px solid grey;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: underline;
+    box-shadow: 3px 3px 10px #888888;
+    margin-top: 20px;
+}
+small   {
+    color:red !important
+}

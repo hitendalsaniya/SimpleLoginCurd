@@ -1,0 +1,83 @@
+<div class="container">
+    <h1 class="p-1 text-center mb-3 formHeading" >Add Student</h1>
+    <div class="row">
+        <div class="col-md-8 center_div" >
+            <fieldset>
+                <legend>Add Student</legend>
+                <form class="center_div" #addEditForm="ngForm" (ngSubmit)="addEdit(addEditForm.value)">
+                    <!-- Student First Name -->
+                    <div class="form-group mb-3">
+                        <label class="control-label" for="StudentFirstName">Enter Your First Name:</label>
+                        <input #StudentFirstName="ngModel" required class="form-control input-md" type="text" name="StudentFirstName" [(ngModel)]="studnet.StudentFirstName" placeholder="Enter First Name"/>
+                        <small *ngIf="StudentFirstName.touched && !StudentFirstName.valid" id="FirstName" class="form-text text-muted">Plase Enter Your Fist Name</small>
+                    </div>
+                    <!-- Student Middal Name -->
+                    <div class="form-group mb-3">
+                        <label class="control-label" for="StudentMiddleName">Enter Your Middal Name:</label>
+                        <input #StudentMiddleName="ngModel" required class="form-control input-md" type="text" name="StudentMiddleName" [(ngModel)]="studnet.StudentMiddleName" placeholder="Enter Middal Name" />
+                        <small *ngIf="StudentMiddleName.touched && !StudentMiddleName.valid" id="MiddalName" class="form-text text-muted">Plase Enter Your Middal Name</small>
+                    </div>
+                    <!-- Student Last Name -->
+                    <div class="form-group mb-3">
+                        <label class="control-label" for="StudentLastName">Enter Your Last Name:</label>
+                        <input #StudentLastName="ngModel" required class="form-control input-md" type="text" name="StudentLastName" [(ngModel)]="studnet.StudentLastName" placeholder=" Enter Last Name" />
+                        <small *ngIf="StudentLastName.touched && !StudentLastName.valid " id="lastName" class="form-text text-muted">Plase Enter Your Last Name</small>
+                    </div>
+                    <!-- Student Email -->
+                    <div class="form-group mb-3">
+                        <label for="StudentEmail">Email address:</label>
+                        <input #StudentEmail="ngModel" required type="email" class="form-control" aria-describedby="emailHelp" name="StudentEmail" [(ngModel)]="studnet.StudentEmail" placeholder="Enter email">
+                        <small *ngIf="StudentEmail.touched && !StudentEmail.valid" id="Email" class="form-text text-muted">Plase Enter Your Email</small>
+                    </div>
+                    <!-- Studnet Mobile Number -->
+                    <div class="form-group mb-3">
+                        <label class="control-label" for="StudentMobileNumber">Enter Your Mobile Number:</label>
+                        <input #StudentMobileNumber="ngModel" required class="form-control input-md" type="tel" name="StudentMobileNumber" [(ngModel)]="studnet.StudentMobileNumber" placeholder="Enter Your Mobile Number" />
+                        <small *ngIf="StudentMobileNumber.touched && !StudentMobileNumber.valid" id="MobileNumber" class="form-text text-muted">Plase Enter Your Mobile Number</small>
+                    </div>
+                    <!-- Student Image URL -->
+                    <div class="form-group mb-3">
+                        <label class="control-label" for="StudentImage">Add your Image:</label>
+                        <input #StudentImage="ngModel" required class="form-control input-md" type="url" name="StudentImage" [(ngModel)]="studnet.StudentImage" placeholder="Enter Your Image URL">
+                        <small *ngIf="StudentImage.touched && !StudentImage.valid" id="ImageUrl" class="form-text text-muted">Plase Enter Your Image URL</small>
+                    </div>
+                    <!-- Droup Down for Course -->
+                    <div class="from-group mb-3">
+                        <label class="control-label" for="courseSelect">Address:</label>
+                            <select class="form-control input-md" name="address" [(ngModel)]="studnet.address">
+                                <option>Rajkot</option>
+                                <option>Jamnagar</option>
+                                <option>Morbi</option>
+                                <option>Surat</option>
+                                <option>Ahemdabad</option>
+                            </select>
+                        </div>
+                    <!-- Droup Down for Course -->
+                    <div class="from-group mb-3">
+                    <label class="control-label" for="courseSelect">Select Your Class:</label>
+                        <select class="form-control input-md" name="StudentClass" [(ngModel)]="studnet.StudentClass">
+                            <option>Programer</option>
+                            <option>MBA</option>
+                            <option>B.Tech</option>
+                            <option>MCA</option>
+                            <option>BBA</option>
+                        </select>
+                    </div>
+                    <!-- Studnet Rol Number -->
+                    <div class="form-group mb-3">
+                        <label class="control-label" for="StudentRollNumber">Enter Your Rol Number:</label>
+                        <input required #StudentRollNumber="ngModel" type="number" class="form-control input-md" name="StudentRollNumber" [(ngModel)]="studnet.StudentRollNumber" placeholder="Enter Your Rol Number" />
+                        <small *ngIf="StudentRollNumber.touched && !StudentRollNumber.valid" id="RolNumber" class="form-text text-muted">Plase Enter Your Rol Number</small>
+                    </div>
+                    <!-- Froms Button -->
+                    <div class="form-group mb-4 text-center">
+                        <input *ngIf="id===null" class="btn btn-success me-2" type="submit" name="Add Studnet" value="Add Student" />
+                        <input *ngIf="id!==null" class="btn btn-primary me-2" type="submit" name="Add Studnet" value="Edit Student" />
+                        <a *ngIf="id===null" class="btn btn-danger ms-2" routerLink="../../home" type="button" name="Cancel">Cancel</a>
+                        <a *ngIf="id!==null" class="btn btn-danger ms-2" routerLink="../../../home" type="button" name="Cancel">Cancel</a>
+                    </div>
+                </form>
+            </fieldset>
+        </div>
+    </div>   
+</div>

@@ -1,0 +1,88 @@
+{
+    "student": [
+      {
+        "StudentFirstName": "Hiten",
+        "StudentMiddleName": "R",
+        "StudentLastName": "Dalsnaiya",
+        "StudentEmail": "piyush@gmial.com",
+        "StudentMobileNumber": "9876543210",
+        "StudentImage": "https://darshan.ac.in/U01/Student-Photo/180543107001_09122020_064503AM.jpg",
+        "address": "Surat",
+        "StudentClass": "B.Tech",
+        "StudentRollNumber": "102",
+        "id": 1
+      },
+      {
+        "StudentFirstName": "Piyush",
+        "StudentMiddleName": "A",
+        "StudentLastName": "Patel",
+        "StudentEmail": "piyush@gmial.com",
+        "StudentMobileNumber": "9876543210",
+        "StudentImage": "https://darshan.ac.in/U01/Student-Photo/160540107154_19032020_050948AM.jpg",
+        "address": "Jamnagar",
+        "StudentClass": "Programer",
+        "StudentRollNumber": "102",
+        "id": 2
+      },
+      {
+        "StudentFirstName": "Chintan",
+        "StudentMiddleName": "M",
+        "StudentLastName": "Dhamsaniya",
+        "StudentEmail": "piyush@gmial.com",
+        "StudentMobileNumber": "9876543210",
+        "StudentImage": "https://darshan.ac.in/U01/Student-Photo/160540107134_18032020_073119AM.jpg",
+        "address": "Rajkot",
+        "StudentClass": "MCA",
+        "StudentRollNumber": "102",
+        "id": 3
+      },
+      {
+        "StudentFirstName": "Jigar",
+        "StudentMiddleName": "D",
+        "StudentLastName": "Dhamsaniya",
+        "StudentEmail": "piyush@gmial.com",
+        "StudentMobileNumber": "9876543210",
+        "StudentImage": "https://darshan.ac.in/U01/Student-Photo/170540107001---16-07-2021-09-40-56.jpg",
+        "address": "Morbi",
+        "StudentClass": "B.Tech",
+        "StudentRollNumber": "102",
+        "id": 4
+      },
+      {
+        "StudentFirstName": " Vipulesh",
+        "StudentMiddleName": "J",
+        "StudentLastName": "Dhamsaniya",
+        "StudentEmail": "piyush@gmial.com",
+        "StudentMobileNumber": "9876543210",
+        "StudentImage": "https://darshan.ac.in/U01/Student-Photo/180543107001_09122020_064503AM.jpg",
+        "address": "Morbi",
+        "StudentClass": "MBA",
+        "StudentRollNumber": "102",
+        "id": 5
+      },
+      {
+        "id": 7,
+        "StudentFirstName": "Rajnish",
+        "StudentMiddleName": "A",
+        "StudentLastName": "Patel",
+        "StudentEmail": "piyush@gmial.com",
+        "StudentMobileNumber": "9876543210",
+        "StudentImage": "https://darshan.ac.in/U01/Student-Photo/160540107154_19032020_050948AM.jpg",
+        "address": "jamngar",
+        "StudentClass": "BTech",
+        "StudentRollNumber": "102"
+      },
+      {
+        "StudentFirstName": "Homy",
+        "StudentMiddleName": "M",
+        "StudentLastName": "Bhalodiya",
+        "StudentEmail": "hiten@gmail.com",
+        "StudentMobileNumber": "20650650650",
+        "StudentImage": "https://darshan.ac.in/U01/Student-Photo/170540107001---16-07-2021-09-40-56.jpg",
+        "address": "Jamnagar",
+        "StudentClass": "BBA",
+        "StudentRollNumber": 301,
+        "id": 10
+      }
+    ]
+  }

@@ -1,0 +1,26 @@
+<div class="container">
+    <h1 class="text-center" id="head_style" >{{student.StudentFirstName}} Details</h1>
+    <div class="row mt-4">
+        <div class="col-md-3 col-sm-12 ">
+            <div class="card mx-auto" style="width: 17rem;">
+                <img class="card-img-top" [src]="student.StudentImage" alt="Card image cap">
+                <div class="card-body">
+                <h5 class="card-title">{{student.StudentFirstName+" "+student.StudentMiddleName+" "+student.StudentLastName}}</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9 col-sm-12 text-center mx-auto" >
+            <ul class="list-group list-group-flush ">
+                <li class="list-group-item"><strong>Name</strong> : {{student.StudentFirstName}}</li>
+                <li class="list-group-item"><strong>LastName</strong> : {{student.StudentLastName}}</li>
+                <li class="list-group-item"><strong>Email</strong> :{{student.StudentEmail}}</li>
+                <li class="list-group-item"><strong>Mobile No</strong> : {{student.StudentMobileNumber}}</li>
+                <li class="list-group-item"><strong>Address</strong> : {{student.address}}</li>
+                <li class="list-group-item"><strong>Class</strong> : {{student.StudentClass}}</li>
+                <li class="list-group-item"><strong>Roll Number</strong> : {{student.StudentRollNumber}}</li>
+                <li class="list-group-item"><button (click)=deleteAStudent(student.id)  class="btn btn-outline-danger" style="margin-right: 25px;"><i class="fas fa-trash-alt"></i></button> <a routerLink="../../home" style="margin-right: 25px;" class="btn btn-outline-success"><i class="fas fa-backward"></i></a><button (click)="editDetails(student.id)" class="btn btn-outline-primary"><i class="far fa-edit"></i></button></li>
+              </ul>
+        </div>
+    </div>
+</div>
+

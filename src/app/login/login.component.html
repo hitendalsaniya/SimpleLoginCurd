@@ -1,0 +1,25 @@
+<div class=" mt-5 container">
+    <div class="row">
+        <form class="frm col-md-8 mx-auto" [formGroup]="loginForm">
+            <div class="text-center">
+                <h5>LogIn Page</h5>
+                <small>id:hitenpatel@gmail.com | pass:12345@Abcd</small>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Email address</label>
+                <input type="email" formControlName="email" class="form-control" required aria-describedby="emailHelp">
+                <small *ngIf="loginForm.get('email').invalid && loginForm.get('email').touched" class="form-text text-danger">Plase Enter Your Fist Name</small>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Password</label>
+                <input [type]="password" formControlName="password" class="form-control" required >
+                <small  *ngIf="loginForm.get('password').invalid && loginForm.get('password').touched" class="form-text text-danger">Plase Enter Vaild Password</small>
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" (click)="onClick()" class="form-check-input">
+                <label class="form-check-label">View Password</label>
+              </div>
+            <button (click)="loginSubmint()" [disabled]="loginForm.invalid" type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>

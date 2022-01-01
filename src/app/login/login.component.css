@@ -1,0 +1,15 @@
+.frm{
+    border: solid 1px grey;
+    padding: 10px;
+    border-radius: 5px;
+    width:55%;
+    height:auto;
+    box-shadow: 2px 3px 15px grey;
+}
+h5{
+    text-decoration: underline;
+    padding: 5px;
+    color: gray;
+    font-weight: 400;
+    font-size: 30px;
+}
